@@ -1,0 +1,87 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+// rubik medium
+// rubik regular
+
+// dm sans regular
+// dm sans medium
+// dm sans bold
+
+
+.header {
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+  }
+
+  .menu-list {
+    display: flex;
+
+    &__item+.menu-list__item {
+      margin-left: 30px;
+    }
+
+    &__item-link {
+      @extend %rubik-500;
+      font-size: 15px;
+      line-height: 12px;
+      color: #436372;
+    }
+  }
+
+  .user-menu {
+    display: flex;
+
+    &__box1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 51px;
+      height: 51px;
+      border-radius: 50%;
+      background-color: #edf1f4;
+    }
+
+    &__box2 {
+      background-image: url('../images/icons/icon-box.png');
+      background-repeat: no-repeat;
+      width: 178px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__box3,
+    &__box2 {
+      margin-left: 20px;
+    }
+
+    &__box-link {
+      position: relative;
+    }
+
+    &__num {
+      @extend %dm-sans-400;
+      font-size: 10px;
+      color: #243f4d;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: -12px;
+      top: -8px;
+    }
+  }
+}
+
+@import 'media';

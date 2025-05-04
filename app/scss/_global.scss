@@ -1,3 +1,17 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 .container-big {
   max-width: 1770px;
   margin: 0 auto;
@@ -6,5 +20,10 @@
 .container {
   max-width: 1200px;
   padding: 0 15px;
-  margin: 0auto;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %dm-sans-700;
+  color: #191919;
 }

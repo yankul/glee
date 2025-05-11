@@ -1,11 +1,11 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss_css      = require('gulp-sass')(require('sass'));
-const concat        = require('gulp-concat');
-const uglify        = require('gulp-uglify');
-const browserSync   = require('browser-sync').create();
-const imagemin      = require('gulp-imagemin-fix');
-const del           = require('del');
+const scss_css = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin-fix');
+const del = require('del');
 
 
 function styles() {
@@ -18,8 +18,9 @@ function styles() {
 
 function scripts() {
   return src([
+    'node_modules/jquery/dist/jquery.js',
     'app/js/main.js',
-    'node_modules/jquery/dist/jquery.js'
+    'node_modules/slick-carousel/slick/slick.js'
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -57,7 +58,7 @@ function build() {
     'app/css/style.min.css',
     'app/js/main.min.js'
   ], { base: 'app' })
-  .pipe(dest('dist'))
+    .pipe(dest('dist'))
 }
 
 function cleanDist() {

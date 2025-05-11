@@ -27,3 +27,8 @@ body {
   @extend %dm-sans-700;
   color: #191919;
 }
+
+.top-slider {
+  background-image: url('../images/topslider/bg.jpg');
+  height: 820px;
+}

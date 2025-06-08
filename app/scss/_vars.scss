@@ -2,6 +2,11 @@ $accent: #a3bbc8;
 $title: #191919;
 $bg: #fef7f0;
 
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
@@ -30,4 +35,15 @@ $bg: #fef7f0;
 %dm-sans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%filter-buttons {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  @extend %dm-sans-700;
+  font-size: 16px;
+  line-height: auto;
+  color: #8b8b8b;
+  cursor: pointer;
 }

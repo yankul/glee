@@ -19,8 +19,10 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'app/js/main.js',
-    'node_modules/slick-carousel/slick/slick.js'
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())

@@ -680,10 +680,6 @@
   max-width: 470px;
   margin: 0 auto 120px;
 
-  // &__form {
-  //   width: 100%;
-  // }
-
   &__input {
     display: block;
     width: 100%;
@@ -740,6 +736,46 @@
     color: #243f4d;
     border: 2px solid #a3bbc8;
     padding: 20px 0 20px;
+  }
+}
+
+.page-404 {
+  padding-top: 115px;
+
+  &__content {
+    text-align: center;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend %rubik-700;
+    font-size: 48px;
+    color: #28384f;
+  }
+
+  &__text {
+    @extend %dm-sans-400;
+    font-size: 18px;
+  }
+
+  &__link {
+    background-color: $bg;
+    color: $accent;
+    @extend %rubik-500;
+    text-transform: uppercase;
+    padding: 16px 25px;
+    display: inline-block;
+  }
+
+  &__title,
+  &__text,
+  &__link {
+    margin-bottom: 35px;
+  }
+
+  &__img {
+    margin: 0 auto;
   }
 }
 

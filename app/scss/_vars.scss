@@ -1,6 +1,7 @@
 $accent: #a3bbc8;
 $title: #191919;
 $bg: #fef7f0;
+$bg2: #edf1f4;
 
 %rubik-300 {
   font-family: 'Rubik-Light', sans-serif;
@@ -46,4 +47,12 @@ $bg: #fef7f0;
   line-height: auto;
   color: #8b8b8b;
   cursor: pointer;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
 }

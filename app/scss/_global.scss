@@ -56,6 +56,7 @@ body {
 
     &:last-child {
       padding-right: 0;
+
       &::after {
         display: none;
       }
@@ -67,5 +68,28 @@ body {
     @extend %rubik-400;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+.item-filter {
+  margin-bottom: 70px;
+}
+
+.filter-title {
+  @extend %dm-sans-700;
+  font-size: 18px;
+  color: #243f4d;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: $accent;
+    top: 10px;
+    transform: translateX(17px);
   }
 }

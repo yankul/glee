@@ -65,14 +65,155 @@
 
   <main class="main">
     <section class="top">
-      <h2 class="top__title">Log in</h2>
+      <h2 class="top__title">Product list 1</h2>
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Log in</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Product list 1</a></li>
         </ul>
       </div>
     </section>
+
+    <section class="products-grid">
+      <div class="container">
+        <div class="products-grid__inner">
+
+          <div class="products-grid__filters filter">
+            <!-- category -->
+            <div class="category-filter item-filter">
+              <h3 class="filter-title">category</h3>
+              <form class="category-filter__form" action="#">
+
+                <label class="category-filter__label">
+                  <input class="category-filter__input" type="checkbox">
+                  <div class="category-filter__checkbox">
+                    <span class="category-filter__text">В'ялене м'ясо</span>
+                    <span class="category-filter__angle">></span>
+                  </div>
+                </label>
+
+                <label class="category-filter__label">
+                  <input class="category-filter__input" type="checkbox">
+                  <div class="category-filter__checkbox">
+                    <span class="category-filter__text">Копчене м'ясо</span>
+                    <span class="category-filter__angle">></span>
+                  </div>
+                </label>
+
+                <label class="category-filter__label">
+                  <input class="category-filter__input" type="checkbox">
+                  <div class="category-filter__checkbox">
+                    <span class="category-filter__text">Копчена олія</span>
+                    <span class="category-filter__angle">></span>
+                  </div>
+                </label>
+
+              </form>
+            </div>
+            <!-- search -->
+            <div class="search-filter item-filter">
+              <h3 class="filter-title">search</h3>
+              <form class="search-filter__form" action="#">
+                <input class="search-filter__input" type="text" placeholder="Product searching...">
+                <button class="search-filter__btn">
+                  <img src="images/icons/search.png" alt="">
+                </button>
+              </form>
+            </div>
+            <!-- price -->
+            <div class="price-filter item-filter">
+              <h3 class="filter-title">price</h3>
+              <form class="price-filter__form" action="#">
+                <input class="price-filter__input" type="text" data-min="0.00" data-max="1000.00" data-from="100.00"
+                  data-to="700.00">
+                <label class="price-filter__label">
+                  <div><span>$</span><span class="price-filter__from"></span></div>
+                  <div><span>$</span><span class="price-filter__to"></span></div>
+                </label>
+                <button class="price-filter__btn" type="submit">filter</button>
+              </form>
+            </div>
+            <!-- type of meat -->
+            <div class="meat-filter item-filter">
+              <h3 class="filter-title">type of meat</h3>
+              <form class="meat-filter__form" action="#">
+
+                <label class="meat-filter__label">
+                  <input class="meat-filter__input" type="checkbox">
+                  <span class="meat-filter__checkbox"></span>
+                  <span class="meat-filter__text">beef</span>
+                </label>
+                <label class="meat-filter__label">
+                  <input class="meat-filter__input" type="checkbox">
+                  <span class="meat-filter__checkbox"></span>
+                  <span class="meat-filter__text">pork</span>
+                </label>
+                <label class="meat-filter__label">
+                  <input class="meat-filter__input" type="checkbox">
+                  <span class="meat-filter__checkbox"></span>
+                  <span class="meat-filter__text">chicken</span>
+                </label>
+                <label class="meat-filter__label">
+                  <input class="meat-filter__input" type="checkbox">
+                  <span class="meat-filter__checkbox"></span>
+                  <span class="meat-filter__text">duck</span>
+                </label>
+                <label class="meat-filter__label">
+                  <input class="meat-filter__input" type="checkbox">
+                  <span class="meat-filter__checkbox"></span>
+                  <span class="meat-filter__text">oil</span>
+                </label>
+
+              </form>
+            </div>
+            <!-- popular products -->
+            <div class="popular-filter item__filter">
+              <h3 class="filter-title">popular products</h3>
+
+              <div class="popular-filter__wrapper">
+                <div class="popular-filter__content">
+                  <img class="popular-filter__img" src="images/products-grid-page/filters/popular-products/sausage.jpg"
+                    alt="image">
+                </div>
+                <div class="popular-filter__rating">
+                  <h6 class="popular-filter__title">Sausage</h6>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <span class="popular-filter__price">$10</span>
+                </div>
+              </div>
+
+              <div class="popular-filter__wrapper">
+                <div class="popular-filter__content">
+                  <img class="popular-filter__img" src="images/products-grid-page/filters/popular-products/oil-rosemary-garlic.jpg"
+                    alt="image">
+                </div>
+                <div class="popular-filter__rating">
+                  <h6 class="popular-filter__title">Oil</h6>
+                  <div class="star" data-rateyo-rating="4.5"></div>
+                  <span class="popular-filter__price">$6</span>
+                </div>
+              </div>
+
+              <div class="popular-filter__wrapper">
+                <div class="popular-filter__content">
+                  <img class="popular-filter__img" src="images/products-grid-page/filters/popular-products/coppa.jpg"
+                    alt="image">
+                </div>
+                <div class="popular-filter__rating">
+                  <h6 class="popular-filter__title">Coppa</h6>
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <span class="popular-filter__price">$17</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="products-grid__content"></div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">

@@ -17,8 +17,10 @@
     "gulp-imagemin-fix": "^5.0.4",
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.7.1",
     "mixitup": "^3.3.2",
+    "rateyo": "^2.3.2",
     "sass": "^1.87.0",
     "slick-carousel": "^1.8.1"
   }
